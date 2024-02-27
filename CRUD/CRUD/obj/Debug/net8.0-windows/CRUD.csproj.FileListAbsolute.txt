@@ -3,7 +3,6 @@ C:\Users\NovaKid\Desktop\CRUD\CRUD\CRUD\bin\Debug\net8.0-windows\CRUD.deps.json
 C:\Users\NovaKid\Desktop\CRUD\CRUD\CRUD\bin\Debug\net8.0-windows\CRUD.runtimeconfig.json
 C:\Users\NovaKid\Desktop\CRUD\CRUD\CRUD\bin\Debug\net8.0-windows\CRUD.dll
 C:\Users\NovaKid\Desktop\CRUD\CRUD\CRUD\bin\Debug\net8.0-windows\CRUD.pdb
-C:\Users\NovaKid\Desktop\CRUD\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.Form1.resources
 C:\Users\NovaKid\Desktop\CRUD\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.Properties.Resources.resources
 C:\Users\NovaKid\Desktop\CRUD\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.csproj.GenerateResource.cache
 C:\Users\NovaKid\Desktop\CRUD\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.GeneratedMSBuildEditorConfig.editorconfig
@@ -15,4 +14,7 @@ C:\Users\NovaKid\Desktop\CRUD\CRUD\CRUD\obj\Debug\net8.0-windows\refint\CRUD.dll
 C:\Users\NovaKid\Desktop\CRUD\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.pdb
 C:\Users\NovaKid\Desktop\CRUD\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.genruntimeconfig.cache
 C:\Users\NovaKid\Desktop\CRUD\CRUD\CRUD\obj\Debug\net8.0-windows\ref\CRUD.dll
-C:\Users\NovaKid\Desktop\CRUD\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.Form2.resources
+C:\Users\NovaKid\Desktop\CRUD\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.CREATE.resources
+C:\Users\NovaKid\Desktop\CRUD\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.LogIn.resources
+C:\Users\NovaKid\Desktop\CRUD\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.Menu.resources
+C:\Users\NovaKid\Desktop\CRUD\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.sourcelink.json

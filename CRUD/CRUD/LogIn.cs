@@ -1,8 +1,8 @@
 namespace CRUD
 {
-    public partial class Form1 : Form
+    public partial class LogIn : Form
     {
-        public Form1()
+        public LogIn()
         {
             InitializeComponent();
         }
@@ -20,7 +20,7 @@ namespace CRUD
             if (user == "Nova" && pass == "Code123")
             {
                 MessageBox.Show("Bienvenido " + user + ".");
-                Form2 formulario = new Form2();//Create the other window
+                Menu formulario = new Menu();//Create the other window
                 this.Hide();//hide Form1
                 formulario.ShowDialog();//Show Form2
                 //ShowDialog stop all activity in Form1 and show the other form

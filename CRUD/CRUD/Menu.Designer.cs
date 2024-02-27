@@ -1,6 +1,6 @@
 ﻿namespace CRUD
 {
-    partial class Form2
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -30,10 +30,7 @@
         {
             menuStrip1 = new MenuStrip();
             sELECTToolStripMenuItem = new ToolStripMenuItem();
-            sEARCHToolStripMenuItem = new ToolStripMenuItem();
             cREATEToolStripMenuItem = new ToolStripMenuItem();
-            dELETEToolStripMenuItem = new ToolStripMenuItem();
-            uPDATEToolStripMenuItem = new ToolStripMenuItem();
             eXITToolStripMenuItem = new ToolStripMenuItem();
             singupToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
@@ -50,34 +47,17 @@
             // 
             // sELECTToolStripMenuItem
             // 
-            sELECTToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { sEARCHToolStripMenuItem, cREATEToolStripMenuItem, dELETEToolStripMenuItem, uPDATEToolStripMenuItem });
+            sELECTToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cREATEToolStripMenuItem });
             sELECTToolStripMenuItem.Name = "sELECTToolStripMenuItem";
             sELECTToolStripMenuItem.Size = new Size(57, 20);
             sELECTToolStripMenuItem.Text = "SELECT";
             // 
-            // sEARCHToolStripMenuItem
-            // 
-            sEARCHToolStripMenuItem.Name = "sEARCHToolStripMenuItem";
-            sEARCHToolStripMenuItem.Size = new Size(118, 22);
-            sEARCHToolStripMenuItem.Text = "SEARCH";
-            // 
             // cREATEToolStripMenuItem
             // 
             cREATEToolStripMenuItem.Name = "cREATEToolStripMenuItem";
-            cREATEToolStripMenuItem.Size = new Size(118, 22);
-            cREATEToolStripMenuItem.Text = "CREATE";
-            // 
-            // dELETEToolStripMenuItem
-            // 
-            dELETEToolStripMenuItem.Name = "dELETEToolStripMenuItem";
-            dELETEToolStripMenuItem.Size = new Size(118, 22);
-            dELETEToolStripMenuItem.Text = "DELETE";
-            // 
-            // uPDATEToolStripMenuItem
-            // 
-            uPDATEToolStripMenuItem.Name = "uPDATEToolStripMenuItem";
-            uPDATEToolStripMenuItem.Size = new Size(118, 22);
-            uPDATEToolStripMenuItem.Text = "UPDATE";
+            cREATEToolStripMenuItem.Size = new Size(180, 22);
+            cREATEToolStripMenuItem.Text = "CRUD";
+            cREATEToolStripMenuItem.Click += cREATEToolStripMenuItem_Click;
             // 
             // eXITToolStripMenuItem
             // 
@@ -89,18 +69,18 @@
             // singupToolStripMenuItem
             // 
             singupToolStripMenuItem.Name = "singupToolStripMenuItem";
-            singupToolStripMenuItem.Size = new Size(180, 22);
+            singupToolStripMenuItem.Size = new Size(120, 22);
             singupToolStripMenuItem.Text = "Sign Out";
             singupToolStripMenuItem.Click += singupToolStripMenuItem_Click;
             // 
-            // Form2
+            // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(710, 406);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Name = "Form2";
+            Name = "Menu";
             Text = "CRUD";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
@@ -112,10 +92,7 @@
 
         private MenuStrip menuStrip1;
         private ToolStripMenuItem sELECTToolStripMenuItem;
-        private ToolStripMenuItem sEARCHToolStripMenuItem;
         private ToolStripMenuItem cREATEToolStripMenuItem;
-        private ToolStripMenuItem dELETEToolStripMenuItem;
-        private ToolStripMenuItem uPDATEToolStripMenuItem;
         private ToolStripMenuItem eXITToolStripMenuItem;
         private ToolStripMenuItem singupToolStripMenuItem;
     }

@@ -10,18 +10,24 @@ using System.Windows.Forms;
 
 namespace CRUD
 {
-    public partial class Form2 : Form
+    public partial class Menu : Form
     {
-        public Form2()
+        public Menu()
         {
             InitializeComponent();
         }
 
         private void singupToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
+            LogIn form = new LogIn();
             this.Hide();
             form.ShowDialog();
+        }
+
+        private void cREATEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CREATE create = new CREATE();
+            create.ShowDialog();
         }
     }
 }
