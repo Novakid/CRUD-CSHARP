@@ -33,12 +33,13 @@
             label1 = new Label();
             label2 = new Label();
             listBoxData = new ListBox();
-            vScrollBar1 = new VScrollBar();
             txtName = new TextBox();
             txtLastName = new TextBox();
             txtAge = new TextBox();
-            label3 = new Label();
             btnUpdate = new Button();
+            btnDelete = new Button();
+            btnRead = new Button();
+            txtRead = new TextBox();
             SuspendLayout();
             // 
             // btnCreate
@@ -47,7 +48,7 @@
             btnCreate.Name = "btnCreate";
             btnCreate.Size = new Size(75, 23);
             btnCreate.TabIndex = 0;
-            btnCreate.Text = "ENTER";
+            btnCreate.Text = "CREATE";
             btnCreate.UseVisualStyleBackColor = true;
             btnCreate.Click += btnCreate_Click;
             // 
@@ -87,13 +88,6 @@
             listBoxData.Size = new Size(206, 349);
             listBoxData.TabIndex = 4;
             // 
-            // vScrollBar1
-            // 
-            vScrollBar1.Location = new Point(315, 33);
-            vScrollBar1.Name = "vScrollBar1";
-            vScrollBar1.Size = new Size(20, 346);
-            vScrollBar1.TabIndex = 5;
-            // 
             // txtName
             // 
             txtName.Location = new Point(107, 31);
@@ -115,18 +109,9 @@
             txtAge.Size = new Size(190, 23);
             txtAge.TabIndex = 8;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(12, 264);
-            label3.Name = "label3";
-            label3.Size = new Size(193, 15);
-            label3.TabIndex = 9;
-            label3.Text = "Select in the list and click to update";
-            // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(212, 260);
+            btnUpdate.Location = new Point(222, 225);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(75, 23);
             btnUpdate.TabIndex = 10;
@@ -134,17 +119,45 @@
             btnUpdate.UseVisualStyleBackColor = true;
             btnUpdate.Click += btnUpdate_Click;
             // 
+            // btnDelete
+            // 
+            btnDelete.Location = new Point(222, 254);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(75, 23);
+            btnDelete.TabIndex = 11;
+            btnDelete.Text = "DELETE";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
+            // 
+            // btnRead
+            // 
+            btnRead.Location = new Point(222, 293);
+            btnRead.Name = "btnRead";
+            btnRead.Size = new Size(75, 21);
+            btnRead.TabIndex = 12;
+            btnRead.Text = "READ";
+            btnRead.UseVisualStyleBackColor = true;
+            btnRead.Click += btnRead_Click;
+            // 
+            // txtRead
+            // 
+            txtRead.Location = new Point(107, 292);
+            txtRead.Name = "txtRead";
+            txtRead.Size = new Size(109, 23);
+            txtRead.TabIndex = 13;
+            // 
             // CREATE
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(571, 395);
+            Controls.Add(txtRead);
+            Controls.Add(btnRead);
+            Controls.Add(btnDelete);
             Controls.Add(btnUpdate);
-            Controls.Add(label3);
             Controls.Add(txtAge);
             Controls.Add(txtLastName);
             Controls.Add(txtName);
-            Controls.Add(vScrollBar1);
             Controls.Add(listBoxData);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -163,11 +176,12 @@
         private Label label1;
         private Label label2;
         private ListBox listBoxData;
-        private VScrollBar vScrollBar1;
         private TextBox txtName;
         private TextBox txtLastName;
         private TextBox txtAge;
-        private Label label3;
         private Button btnUpdate;
+        private Button btnDelete;
+        private Button btnRead;
+        private TextBox txtRead;
     }
 }

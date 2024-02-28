@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -66,6 +68,40 @@ namespace CRUD
                 txtName.Clear();
                 txtLastName.Clear();
                 txtAge.Clear();
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (listBoxData.SelectedIndex >= 0)
+            {
+                int indexSeleted = listBoxData.SelectedIndex;
+
+                listBoxData.Items.RemoveAt(indexSeleted);
+
+                txtName.Clear();
+                txtLastName.Clear();
+                txtAge.Clear();
+            }
+        }
+
+        private void btnRead_Click(object sender, EventArgs e)
+        {
+            String reader = txtRead.Text;
+
+            foreach (String search in listBoxData.Items)
+            {
+                String[] eachs = search.Split(",");
+
+                foreach (String each in eachs)
+                {
+                    if (each.Trim().Equals(reader, StringComparison.OrdinalIgnoreCase))
+                    {
+                        MessageBox.Show($"Yes {reader}, if it exist");
+                        break;
+                    }
+                }
+
             }
         }
     }
